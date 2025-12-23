@@ -3,10 +3,7 @@
   background: #ffffff;
   border: 1px solid #d1d5db;
   border-radius: 8px;
-
-  /* 🔥 EVEN PADDING ALL SIDES */
   padding: 12px;
-
   min-width: 220px;
   font-family: system-ui, sans-serif;
 }
@@ -28,4 +25,14 @@
   background: #2563eb;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+/* Keep handles inside node border */
+.base-node .react-flow__handle-left {
+  left: -5px;   /* half of handle + border */
+}
+
+/* 🔑 CENTER HANDLE ON BORDER (RIGHT) */
+.base-node .react-flow__handle-right {
+  right: -5px;  /* half of handle + border */
 }
