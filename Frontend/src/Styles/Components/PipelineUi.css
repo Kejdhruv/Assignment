@@ -1,4 +1,3 @@
-/* Controls container */
 .react-flow__controls {
   background: #0f172a;
   border: 1px solid #1f2937;
@@ -7,7 +6,6 @@
   backdrop-filter: blur(4px);
 }
 
-/* Individual control buttons */
 .react-flow__controls-button {
   background: transparent;
   border: none;
@@ -15,23 +13,27 @@
   width: 28px;
   height: 28px;
   border-radius: 6px;
-
   transition: background 0.15s ease, color 0.15s ease;
 }
 
-/* 🔑 THIS FIXES BLACK ICONS */
-.react-flow__controls-button svg {
+/* 🔥 KILL WHITE BACKGROUND */
+.react-flow__controls-button svg rect {
+  fill: transparent !important;
+}
+
+/* Icon color */
+.react-flow__controls-button svg path {
   fill: currentColor;
   stroke: currentColor;
 }
 
-/* Hover state */
+/* Hover */
 .react-flow__controls-button:hover {
   background: rgba(99, 102, 241, 0.15);
   color: #6366f1;
 }
 
-/* Active / pressed */
+/* Active */
 .react-flow__controls-button:active {
   background: rgba(99, 102, 241, 0.25);
 }

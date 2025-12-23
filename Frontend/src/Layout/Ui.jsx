@@ -1,7 +1,8 @@
 import { useState, useRef, useCallback } from "react";
 import ReactFlow, { Controls, Background, MiniMap } from "reactflow";
 import { shallow } from "zustand/shallow";
-import "../Styles/Components/PipelineUi.css"
+import "reactflow/dist/style.css";
+import "../Styles/Components/PipelineUi.css";
 import { useStore } from "../Components/Store";
 import { SubmitButton } from "../Components/Submit";
 import { PipelineToolbar } from "../Components/Toolbar";
@@ -11,7 +12,6 @@ import { LLMNode } from "../Nodes/NodeComponents/LLMNode";
 import { OutputNode } from "../Nodes/NodeComponents/OutputNode";
 import { TextNode } from "../Nodes/NodeComponents/TextNode";
 
-import "reactflow/dist/style.css";
 
 const gridSize = 20;
 
