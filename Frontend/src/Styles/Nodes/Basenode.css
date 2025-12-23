@@ -1,20 +1,31 @@
 .base-node {
-  min-width: 180px;
+  position: relative;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #d1d5db;
   border-radius: 8px;
-  padding: 10px;
-  font-size: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  /* 🔥 EVEN PADDING ALL SIDES */
+  padding: 12px;
+
+  min-width: 220px;
+  font-family: system-ui, sans-serif;
 }
 
-.node-title {
+.base-node-title {
   font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #111827;
 }
 
-.node-content {
+.base-node-content {
   margin-top: 6px;
+}
+
+/* 🔵 HANDLE STYLE */
+.base-node-handle {
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border: 2px solid white;
+  border-radius: 50%;
 }

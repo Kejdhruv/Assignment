@@ -1,14 +1,11 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import BaseNode from './Layout/BaseNode';
+import { Routes, Route } from "react-router-dom";
+import { PipelineUI } from "./Layout/Ui";
+
 
 function App() {
   return (
     <Routes>
-      {/* Auth page without navbar */}
-      <Route path="/" element={<BaseNode/>} />
-
-    
+      <Route path="/" element={<PipelineUI/>} />
     </Routes>
   );
 }

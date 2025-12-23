@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useStore } from "./Store";
-import PipelineModal from "./PipelineSummaryModal";
+import PipelineModal from "./PipelineModal";
+import "../Styles/Components/SubmitButton.css";
 
 export const SubmitButton = () => {
   const nodes = useStore((state) => state.nodes);
@@ -8,9 +9,14 @@ export const SubmitButton = () => {
 
   const [summary, setSummary] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
+    if (nodes.length === 0) return;
+
     try {
+      setLoading(true);
+
       const response = await fetch("http://127.0.0.1:8000/pipelines/parse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -31,14 +37,20 @@ export const SubmitButton = () => {
     } catch (err) {
       console.error(err);
       alert("Failed to submit pipeline");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
+      <button
+        className="submit-btn"
+        onClick={handleSubmit}
+        disabled={loading || nodes.length === 0}
+      >
+        {loading ? "Submitting..." : "Submit Pipeline"}
+      </button>
 
       <PipelineModal
         isOpen={isModalOpen}

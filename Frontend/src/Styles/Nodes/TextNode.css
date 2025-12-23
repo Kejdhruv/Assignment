@@ -1,19 +1,59 @@
+/* Wrapper */
 .text-node-field {
-  display: flex;
-  flex-direction: column;
+padding: 0 ;
+margin:0 ; 
+  width: 100%;
+  display: block;           /* ❌ NOT flex */
 }
 
-.text-node-field label {
-  display: flex;
-  flex-direction: column;
-  font-size: 11px;
-  color: #374151;
+/* Textarea */
+.text-node-field textarea {
+  width: 100%;
+  max-width: 100%;          /* ❌ stop horizontal expansion */
+  min-width: 100%;
+
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: inherit;
+
+  resize: none;             /* ❌ disable manual resize */
+  overflow: hidden;         /* 🔑 allow auto vertical resize */
+  outline: none;
+}ground: #ffffff; 
+
+
+/* Focus state */
+.text-node-field textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px #6366f1;
 }
 
-.text-node-field input {
-  margin-top: 4px;
-  padding: 4px;
-  font-size: 11px;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
+/* Variables container (inside card, below textarea) */
+.text-node-vars {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+/* "Inputs:" label */
+.vars-label {
+  color: #6b7280;
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+/* Variable chip */
+.var-chip {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 500;
+  line-height: 1.2;
 }

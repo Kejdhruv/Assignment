@@ -1,37 +1,38 @@
 import { Handle, Position } from "reactflow";
-import "../Styles/Nodes/Basenode.css"
+import "../Styles/Nodes/BaseNode.css";
 
-export default function BaseNode({
-  title,
-  inputs = [],
-  outputs = [],
-  children
-}) {
+const BaseNode = ({ title, inputs = [], outputs = [], children }) => {
   return (
     <div className="base-node">
-      <div className="node-title">{title}</div>
+      <div className="base-node-title">{title}</div>
 
-      {inputs.map((input, idx) => (
+      {/* INPUT HANDLES ONLY (NO LABELS) */}
+      {inputs.map((input, index) => (
         <Handle
           key={input}
           type="target"
           position={Position.Left}
           id={input}
-          style={{ top: 40 + idx * 20 }}
+          className="base-node-handle"
+          style={{ top: 50 + index * 18 }}
         />
       ))}
 
-      <div className="node-content">{children}</div>
+      <div className="base-node-content">{children}</div>
 
-      {outputs.map((output, idx) => (
+      {/* OUTPUT HANDLES */}
+      {outputs.map((output, index) => (
         <Handle
           key={output}
           type="source"
           position={Position.Right}
           id={output}
-          style={{ top: 40 + idx * 20 }}
+          className="base-node-handle"
+          style={{ top: 50 + index * 18 }}
         />
       ))}
     </div>
   );
-}
+};
+
+export default BaseNode;

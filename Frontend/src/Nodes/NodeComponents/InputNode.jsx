@@ -14,7 +14,7 @@ export const InputNode = ({ id, data }) => {
     <BaseNode
       title="Input"
       inputs={[]}
-      outputs={[`${id}-value`]}
+       outputs={["value"]}  
     >
       <div className="input-node-field">
         <label>
