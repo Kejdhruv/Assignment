@@ -1,4 +1,4 @@
-import BaseNode from "../BaseNode";
+import BaseNode from "../../Layout/BaseNode";
 import "../../Styles/Nodes/LLMNode.css"
 
 export const LLMNode = ({ id }) => {

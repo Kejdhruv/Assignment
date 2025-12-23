@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import BaseNode from './Nodes/BaseNode';
+import BaseNode from './Layout/BaseNode';
 
 function App() {
   return (

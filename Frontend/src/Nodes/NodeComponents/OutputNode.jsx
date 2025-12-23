@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BaseNode from "../BaseNode";
+import BaseNode from "../../Layout/BaseNode";
 import "../../Styles/Nodes/OutputNode.css"
 
 export const OutputNode = ({ id, data }) => {
