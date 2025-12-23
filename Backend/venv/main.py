@@ -16,16 +16,13 @@ def read_root():
 class Node(BaseModel):
     id: str
 
-
 class Edge(BaseModel):
     source: str
     target: str
 
-
 class Pipeline(BaseModel):
     nodes: List[Node]
     edges: List[Edge]
-
 
 # -------- API --------
 
