@@ -11,7 +11,7 @@ import { InputNode } from "../Nodes/NodeComponents/InputNode";
 import { LLMNode } from "../Nodes/NodeComponents/LLMNode";
 import { OutputNode } from "../Nodes/NodeComponents/OutputNode";
 import { TextNode } from "../Nodes/NodeComponents/TextNode";
-
+import { ConditionNode } from "../Nodes/NodeComponents/ConditionNode";
 
 const gridSize = 20;
 
@@ -20,7 +20,8 @@ const nodeTypes = {
   customInput: InputNode,
   llm: LLMNode,
   customOutput: OutputNode,
-  text: TextNode,
+   text: TextNode,
+  condition: ConditionNode, 
 };
 
 const selector = (state) => ({

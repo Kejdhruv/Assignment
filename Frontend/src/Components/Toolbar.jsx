@@ -10,7 +10,8 @@ export const PipelineToolbar = () => {
         <Draggable type="customInput" label="Input" />
         <Draggable type="llm" label="LLM" />
         <Draggable type="customOutput" label="Output" />
-        <Draggable type="text" label="Text" />
+              <Draggable type="text" label="Text" />
+              <Draggable type="condition" label="Condition" />
       </div>
     </div>
   );
