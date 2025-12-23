@@ -10,6 +10,8 @@
   background-color: #1c2536;
   border : 1px solid ; 
   border-color:  #4f46e5 ;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .draggable-node:active {
