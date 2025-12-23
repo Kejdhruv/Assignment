@@ -1,0 +1,12 @@
+.toolbar {
+  padding: 10px;
+  background: #0f172a;
+  border-right: 1px solid #1f2937;
+}
+
+.toolbar-nodes {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
