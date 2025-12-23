@@ -14,7 +14,7 @@ import { TextNode } from "../Nodes/NodeComponents/TextNode";
 import "reactflow/dist/style.css";
 
 const gridSize = 20;
-const proOptions = { hideAttribution: true };
+
 
 const nodeTypes = {
   customInput: InputNode,

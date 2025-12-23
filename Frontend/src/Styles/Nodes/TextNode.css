@@ -11,18 +11,16 @@ margin:0 ;
   width: 100%;
   max-width: 100%;          /* ❌ stop horizontal expansion */
   min-width: 100%;
-
   box-sizing: border-box;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 8px 10px;
   font-size: 13px;
   font-family: inherit;
-
   resize: none;             /* ❌ disable manual resize */
   overflow: hidden;         /* 🔑 allow auto vertical resize */
   outline: none;
-}ground: #ffffff; 
+}
 
 
 /* Focus state */
