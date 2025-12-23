@@ -1,24 +1,21 @@
-/* Floating toolbar container */
+
 .toolbar {
   position: absolute;
   top: 20px;
   left: 20px;
   z-index: 20;
-
   background: #0f172a;
   border: 1px solid #1f2937;
   border-radius: 14px;
   padding: 14px;
-
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
-
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   width: max-content;
 }
-/* Small title */
+
 .toolbar-title {
  font-weight: 500;
   font-size: 12px; 
@@ -29,7 +26,6 @@
   margin-left: 4px;   
 }
 
-/* Grid of draggable nodes */
 .toolbar-nodes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

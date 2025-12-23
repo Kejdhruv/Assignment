@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import ReactFlow, { Controls, Background, MiniMap } from "reactflow";
 import { shallow } from "zustand/shallow";
-
+import "../Styles/Components/PipelineUi.css"
 import { useStore } from "../Components/Store";
 import { SubmitButton } from "../Components/Submit";
 import { PipelineToolbar } from "../Components/Toolbar";
@@ -112,14 +112,19 @@ export const PipelineUI = () => {
       >
         <Background color="#aaa" gap={gridSize} />
         <Controls />
-        <MiniMap
+     <MiniMap
   position="top-right"
   style={{
     backgroundColor: "#0f172a",
     borderRadius: 8,
-    boxShadow: "0 10px 25px rgba(0,0,0,0.25)",
+    border: "2px solid #6366f1",
+
+    /* 👇 soft, premium shadow */
+    boxShadow: "0 6px 18px rgba(99, 102, 241, 0.25)",
   }}
   nodeColor={() => "#6366f1"}
+  maskColor="rgba(0, 0, 0, 0)"
+  pannable
 />
       </ReactFlow>
 
