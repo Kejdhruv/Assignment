@@ -8,6 +8,8 @@
   flex-direction: column;
   border-radius: 8px;
   background-color: #1c2536;
+  border : 1px solid ; 
+  border-color:  #4f46e5 ;
 }
 
 .draggable-node:active {

@@ -1,9 +1,11 @@
-import Draggable from "./DraggableNode.jsx";
+import Draggable from "./DraggableNode";
 import "../Styles/Components/Toolbar.css";
 
 export const PipelineToolbar = () => {
   return (
     <div className="toolbar">
+      <div className="toolbar-title">Nodes</div>
+
       <div className="toolbar-nodes">
         <Draggable type="customInput" label="Input" />
         <Draggable type="llm" label="LLM" />

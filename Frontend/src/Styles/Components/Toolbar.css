@@ -1,12 +1,32 @@
+/* Floating toolbar container */
 .toolbar {
-  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+
   background: #0f172a;
-  border-right: 1px solid #1f2937;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 14px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  width: max-content;
 }
 
+/* Small title */
+.toolbar-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #cbd5f5;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Grid of draggable nodes */
 .toolbar-nodes {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
