@@ -1,4 +1,6 @@
-/* 🔹 Overlay with blur */
+/* ===============================
+   MODAL OVERLAY (BLUR BACKDROP)
+================================ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -12,7 +14,9 @@
   z-index: 1000;
 }
 
-/* 🔹 Glass modal */
+/* ===============================
+   GLASS MODAL CONTAINER
+================================ */
 .modal {
   width: 340px;
   padding: 22px;
@@ -33,7 +37,9 @@
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* 🔹 Title */
+/* ===============================
+   MODAL TITLE
+================================ */
 .modal h2 {
   margin-bottom: 14px;
   font-size: 18px;
@@ -41,14 +47,52 @@
   color: #f8fafc;
 }
 
-/* 🔹 Content */
-.modal-content p {
-  margin: 8px 0;
+/* ===============================
+   CONTENT WRAPPER
+================================ */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   font-size: 14px;
   color: #cbd5f5;
 }
 
-/* 🔹 DAG status */
+/* ===============================
+   INFO CARDS
+================================ */
+.info-card {
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Labels (left side) */
+.info-label {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ✅ VALUES (numbers / Yes / No) */
+.info-card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* ===============================
+   DAG STATUS COLORS
+================================ */
 .dag-yes {
   color: #22c55e;
   font-weight: 600;
@@ -59,7 +103,14 @@
   font-weight: 600;
 }
 
-/* 🔹 Close button */
+/* Highlighted status card */
+.status-card {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+/* ===============================
+   CLOSE BUTTON
+================================ */
 .close-btn {
   margin-top: 18px;
   padding: 8px 14px;

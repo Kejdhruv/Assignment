@@ -7,17 +7,24 @@ const PipelineModal = ({ isOpen, onClose, summary }) => {
     <div className="modal-overlay">
       <div className="modal">
         <h2>Pipeline Summary</h2>
+<div className="modal-content">
+  <div className="info-card">
+    <span className="info-label">Nodes</span>
+    <p>{summary.num_nodes}</p>
+  </div>
 
-        <div className="modal-content">
-          <p><strong>Nodes:</strong> {summary.num_nodes}</p>
-          <p><strong>Edges:</strong> {summary.num_edges}</p>
-          <p>
-            <strong>Valid DAG:</strong>{" "}
-            <span className={summary.is_dag ? "dag-yes" : "dag-no"}>
-              {summary.is_dag ? "Yes" : "No"}
-            </span>
-          </p>
-        </div>
+  <div className="info-card">
+    <span className="info-label">Edges</span>
+    <p>{summary.num_edges}</p>
+  </div>
+
+  <div className="info-card status-card">
+    <span className="info-label">Valid DAG</span>
+    <p className={summary.is_dag ? "dag-yes" : "dag-no"}>
+      {summary.is_dag ? "Yes" : "No"}
+    </p>
+  </div>
+</div>
 
         <button className="close-btn" onClick={onClose}>
           Close
