@@ -135,3 +135,29 @@
 .close-btn:active {
   transform: translateY(0);
 }
+
+/* ===============================
+   RESPONSIVE MODAL
+================================ */
+
+@media (max-width: 768px) {
+  .modal {
+    width: calc(100% - 32px);
+    max-width: none;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .modal-content {
+    gap: 10px;
+  }
+
+  .info-card {
+    padding: 10px;
+  }
+
+  .close-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

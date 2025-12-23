@@ -31,3 +31,31 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .toolbar {
+    top: 12px;
+    left: 12px;
+    padding: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .toolbar {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+
+  .toolbar-nodes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .toolbar-title {
+    text-align: center;
+  }
+}

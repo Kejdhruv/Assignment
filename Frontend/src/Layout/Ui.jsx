@@ -87,7 +87,7 @@ export const PipelineUI = () => {
   }, []);
 
  return (
-  <div style={{ display: "flex", height: "100vh" }}>
+  <div className="pipeline-root">
     {/* LEFT TOOLBAR */}
     <PipelineToolbar />
 
@@ -112,18 +112,18 @@ export const PipelineUI = () => {
       >
         <Background color="#aaa" gap={gridSize} />
         <Controls />
-     <MiniMap
+    <MiniMap
   position="top-right"
   style={{
     backgroundColor: "#0f172a",
     borderRadius: 8,
     border: "2px solid #6366f1",
-
-    /* 👇 soft, premium shadow */
-    boxShadow: "0 6px 18px rgba(99, 102, 241, 0.25)",
+    boxShadow: "0 6px 18px rgba(99,102,241,0.25)",
+    width: 140,
+    height: 100,
   }}
   nodeColor={() => "#6366f1"}
-  maskColor="rgba(0, 0, 0, 0)"
+  maskColor="rgba(0,0,0,0)"
   pannable
 />
       </ReactFlow>

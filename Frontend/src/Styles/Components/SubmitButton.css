@@ -27,3 +27,14 @@
   cursor: not-allowed;
   box-shadow: none;
 }
+
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .submit-wrapper {
+    bottom: 90px;
+  }
+}

@@ -5,7 +5,12 @@
   padding: 4px;
   backdrop-filter: blur(4px);
 }
-
+.pipeline-root {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 .react-flow__controls-button {
   background: transparent;
   border: none;
@@ -36,4 +41,22 @@
 /* Active */
 .react-flow__controls-button:active {
   background: rgba(99, 102, 241, 0.25);
+}
+
+/* Mobile MiniMap */
+@media (max-width: 768px) {
+  .react-flow__minimap {
+    bottom: 76px !important;  /* 👈 ABOVE submit button */
+    right: 5px !important;
+    top: auto !important;
+    z-index: 15;
+  }
+}
+/* Mobile controls */
+@media (max-width: 768px) {
+  .react-flow__controls {
+    bottom: 12px;
+    left: 12px;
+     z-index: 20; 
+  }
 }
