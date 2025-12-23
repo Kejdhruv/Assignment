@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import BaseNode from "./BaseNode";
-import "../styles/textNode.css";
+import BaseNode from "../BaseNode";
+import "../../Styles/Nodes/TextNode.css"
 
 const VARIABLE_REGEX = /{{\s*([a-zA-Z_$][a-zA-Z0-9_$]*)\s*}}/g;
 

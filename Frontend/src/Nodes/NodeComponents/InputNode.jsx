@@ -1,6 +1,6 @@
 import { useState } from "react";
-import BaseNode from "./BaseNode";
-import "../Styles/Nodes/InputNode.css"
+import BaseNode from "../BaseNode";
+import "../../Styles/Nodes/InputNode.css"
 
 export const InputNode = ({ id, data }) => {
   const [currName, setCurrName] = useState(

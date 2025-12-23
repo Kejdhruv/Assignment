@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import BaseNode from './Nodes/BaseNode';
 
 function App() {
   return (
     <Routes>
       {/* Auth page without navbar */}
-      <Route path="/" element={<h1>Hi </h1>} />
+      <Route path="/" element={<BaseNode/>} />
 
     
     </Routes>

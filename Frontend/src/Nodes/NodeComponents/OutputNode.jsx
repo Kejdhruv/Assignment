@@ -1,6 +1,6 @@
 import { useState } from "react";
-import BaseNode from "./BaseNode";
-import "../styles/outputNode.css";
+import BaseNode from "../BaseNode";
+import "../../Styles/Nodes/OutputNode.css"
 
 export const OutputNode = ({ id, data }) => {
   const [currName, setCurrName] = useState(
