@@ -6,10 +6,10 @@ Users can build workflows by dragging nodes, connecting them visually, and submi
 This project focuses on **clean node abstraction, dynamic graph behavior, responsive UI, and solid engineering practices**.
 
 ---
-<img src="assets/Home.png" alt="Desktop View" width="800" /> 
-<img src="assets/Rendering.png" alt="Desktop View" width="800" /> 
-<img src="assets/Modal.png" alt="Desktop View" width="800" />  
-<img src="assets/Mobile.png" alt="Mobile View" width="500" />  
+<img src="Assets/Home.png" alt="Desktop View" width="800" /> 
+<img src="Assets/Rendering.png" alt="Desktop View" width="800" /> 
+<img src="Assets/Modal.png" alt="Desktop View" width="800" />  
+<img src="Assets/Mobile.png" alt="Mobile View" width="500" />  
 ## 🚀 Features
 
 - Drag & drop workflow editor using **ReactFlow**
